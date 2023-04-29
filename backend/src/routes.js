@@ -3,7 +3,6 @@ const route = express.Router()
 
 const UserController = require('./Controller/UserController')
 
-const { validateToken } = require('./JWT')
 //Register User on the database  
 route.post("/signup", UserController.store)
 //Login the user with JWT
